@@ -64,21 +64,6 @@ BiocManager::install("ampir")
 
 ---
 
-## Usage
-
-1. Clone the repository and set your working directory at the top of each script (`setwd()`).
-2. Place your FASTA alignment files in the working directory.
-3. Run `duplicate_counter_portfolio.R` first if you only need sequence frequency counts, or run `covid_portfolio.R` for the full pipeline.
-
-```r
-# Quick frequency count using the standalone function
-source("duplicate_counter_portfolio.R")
-sequences <- read.fasta("1_msa.fasta", set.attributes = FALSE, as.string = TRUE)
-duplicate_counter(sequences, "output_counts.txt")
-```
-
----
-
 ## Assays & Primers
 
 Three LAMP assays are analysed, each targeting a different region of the SARS-CoV-2 genome:
